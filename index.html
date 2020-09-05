@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="w3.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+  <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <style>
+
+  .font_Oxygen {font-family: 'Oxygen', sans-serif;}
+  .font_Roboto {font-family: 'Roboto', sans-serif;}
+  .font_OpenSans {font-family: 'Open Sans', sans-serif;}
+
+  .Title_Indention {
+    text-indent: 110px;
+  }
+
+  </style>
+
+  <meta charset="utf-8">
+  <title>Thanapat Pitchayarat - Personal Website</title>
+</head>
+<body>
+
+  <div class="w3-display-container">
+
+    <img class="w3-image w3-greyscale-min" src="img/20170913_160100_16_9.jpg" alt="" style="width:100%">
+    <div class="font_Roboto w3-large w3-padding-32 w3-display-topleft" style="left:32px">
+      <a href="#.html" class="w3-btn w3-text-amber w3-hover-text-orange"><b><i class="fa fa-home"></i></b></a>
+    </div>
+    <div class="font_Roboto w3-large w3-padding-32 w3-display-topright" style="right:32px">
+      <a href="portfolio.html" class="w3-btn w3-text-white w3-opacity w3-hover-opacity-off"><b>Portfolio</b></a>
+    </div>
+    <div class="font_Roboto w3-large w3-padding-32 w3-display-topright" style="right:150px">
+      <a href="cv.html" class="w3-btn w3-text-white w3-opacity w3-hover-opacity-off"><b>CV</b></a>
+    </div>
+    <div class="w3-display-middle w3-center">
+      <h1 class="font_OpenSans w3-text-white" style="text-shadow:1px 1px 0 #444"><b>THANE PITCHAYARAT</b></h1>
+      <b><i><p class="Title_Indention w3-opacity w3-justify w3-white" id="changeText"></p></i></b>
+      <a href="cv.html#Bio" class="font_Roboto w3-button w3-border w3-text-white w3-large w3-padding-large">DISCOVER</a>
+    </div>
+  </div>
+<script>
+var text = [
+  "the Analyzer",
+  "the Athlete",
+  "the Commander",
+  "the Competitor",
+  "the Engineer",
+  "the Entrepreneur",
+  "the Leader",
+  "the Researcher",
+  "the Scientist",
+  "the Student"];
+var counter = 0;
+var elem = document.getElementById("changeText");
+var inst = setInterval(change, 1500);
+
+function change() {
+ elem.innerHTML = text[counter];
+ counter++;
+ if (counter >= text.length) {
+   counter = 0;
+   // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+ }
+}
+</script>
+
+<!--
+<div class="w3-dark-grey w3-padding w3-center font_Roboto w3-tiny">
+  <p>This site used <a href="https://fontawesome.com/">Font Awesome</a> and <a href="https://www.w3schools.com/w3css/defaulT.asp"> W3.CSS</a> as CSS Framework</p>
+  <p>© 2020 Copyright: <a href="https://thanepi.github.io/">Thane Pitchayarat</a> | <a href="https://firebrand-intellect.github.io/">Firebrand Intellect</a></p>
+</div>
+-->
+
+</body>
+</html>
