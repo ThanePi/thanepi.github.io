@@ -16,7 +16,7 @@
 
   #myVideo {
     width: 100%;
-    height: 100vh; /*Fit height of screen*/
+    /*height: 100vh;*/ /*Fit height of screen*/
     object-fit: cover;
   }
   </style>
@@ -58,17 +58,23 @@
   </div>
 
   <div class="w3-display-container" id="Conference">
+    <!--
     <img class="w3-image" src="img/43493_Paro.jpg" alt="Conference Certificate" style="width:100%">
-    <div class="w3-display-left w3-text-white" style="padding:96px">
+  -->
+    <video autoplay muted loop id="myVideo">
+      <source src="vid/Media1.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="w3-display-left w3-text-white" style="padding:96px; text-shadow:0 0 15px #000000">
       <span class="font_Roboto w3-xxxlarge"><b>Hackathon to Conference</b></span><br>
       <p class="font_Roboto w3-xlarge">Medical text classification</p>
       <p class="font_Roboto w3-xlarge">41th Percentile on a Hackathon Placement <br> Conference Proceeding Paper</p>
-      <a href="https://hackathon.aiat.or.th/hackathon-2-2020/" target="_blank"><button class="font_Roboto w3-button w3-padding-large w3-border w3-border-white w3-large w3-round-large" style="width:175px"><i class="fas fa-clock"></i><b> Hackathon</b></button></a>
-      <a href="https://drive.google.com/file/d/1IpkJATiLALFPJkqXh2AqEp7RL7b8GQvx/view?usp=sharing" target="_blank"><button class="font_Roboto w3-button w3-padding-large w3-border w3-border-white w3-large w3-round-large" style="width:175px"><i class="fas fa-atom"></i><b> Conference</b></button></a>
+      <a href="https://hackathon.aiat.or.th/hackathon-2-2020/" target="_blank"><button class="font_Roboto w3-button w3-padding-large w3-border w3-border-grey w3-large w3-round-large" style="width:175px; text-shadow:0 0 10px #000000"><i class="fas fa-clock"></i><b> Hackathon</b></button></a>
+      <a href="https://drive.google.com/file/d/1IpkJATiLALFPJkqXh2AqEp7RL7b8GQvx/view?usp=sharing" target="_blank"><button class="font_Roboto w3-button w3-padding-large w3-border w3-border-grey w3-large w3-round-large" style="width:175px; text-shadow:0 0 10px #000000"><i class="fas fa-atom"></i><b> Conference</b></button></a>
       <br><b>
-      <a href="doc/FCNP_for_Paper.html" target="_blank"><button class="font_Roboto w3-button w3-padding-large w3-border w3-border-white w3-large w3-round-large w3-margin-top" style="width:115px"><i class="fas fa-code"></i> Code</button></a>
-      <button class="font_Roboto w3-button w3-padding-large w3-border w3-border-white w3-large w3-round-large w3-margin-top" onclick="document.getElementById('HCcerts').style.display='block'; pressModal('HCcerts');" style="width:115px"><i class="fas fa-award"></i> Certs</button>
-      <a href="https://drive.google.com/file/d/1RgeVQmx7aC_wxGPGfFBCCLjabk-H5pC5/view?usp=sharing" target="_blank"><button class="font_Roboto w3-button w3-padding-large w3-border w3-border-white w3-large w3-round-large w3-margin-top" style="width:115px"><i class="fas fa-file-pdf"></i> Paper</button></a>
+      <a href="doc/FCNP_for_Paper.html" target="_blank"><button class="font_Roboto w3-button w3-padding-large w3-border w3-border-grey w3-large w3-round-large w3-margin-top" style="width:115px; text-shadow:0 0 10px #000000"><i class="fas fa-code"></i> Code</button></a>
+      <button class="font_Roboto w3-button w3-padding-large w3-border w3-border-grey w3-large w3-round-large w3-margin-top" onclick="document.getElementById('HCcerts').style.display='block'; pressModal('HCcerts');" style="width:115px; text-shadow:0 0 10px #000000"><i class="fas fa-award"></i> Certs</button>
+      <a href="https://drive.google.com/file/d/1RgeVQmx7aC_wxGPGfFBCCLjabk-H5pC5/view?usp=sharing" target="_blank"><button class="font_Roboto w3-button w3-padding-large w3-border w3-border-grey w3-large w3-round-large w3-margin-top" style="width:115px; text-shadow:0 0 10px #000000"><i class="fas fa-file-pdf"></i> Paper</button></a>
       </b>
     </div>
   </div>
@@ -148,7 +154,7 @@
     <p class="font_Roboto w3-center w3-xxlarge"><b>Small-Scale Projects</b></p>
     <p class="font_Roboto w3-center w3-large"><b>Learning by doing</b>. These small to medium-scale project have done for learning by start self-coding and support with source from across online-course and classroom</p>
     <div class="w3-third w3-margin-bottom">
-      <img src="img/20170913_160100_16_9.jpg" style="width:100%">
+      <img src="img/SmallProjectTumbnail/003.jpg" style="width:100%">
       <div class="w3-container w3-light-grey w3-border font_Roboto">
         <h4><b>Search for Restaurant by Explaination</b></h4>
         <p>Explain or discribe about restaurant that user want to dine out.</p>
@@ -159,7 +165,7 @@
       </div>
     </div>
     <div class="w3-third w3-margin-bottom">
-      <img src="img/20170913_160100_16_9.jpg" style="width:100%">
+      <img src="img/SmallProjectTumbnail/002.jpg" style="width:100%">
       <div class="w3-container w3-light-grey w3-light-grey w3-border font_Roboto">
         <h4><b>Reviewer's Feedback Satisfaction Predictor</b></h4>
         <p>Predict probability of reviewer's statisfaction of each review.</p>
@@ -170,7 +176,7 @@
       </div>
     </div>
         <div class="w3-third w3-margin-bottom">
-      <img src="img/20170913_160100_16_9.jpg" style="width:100%">
+      <img src="img/SmallProjectTumbnail/001.jpg" style="width:100%">
       <div class="w3-container w3-light-grey w3-border w3-light-grey font_Roboto">
         <h4><b>Blind date's Concept Diner Recommendation</b></h4>
         <p>Recommend diner in Las Vegas with concept of blind date.</p>
@@ -267,7 +273,7 @@
 
   <div class="w3-display-container" id="Tutoring">
     <img class="w3-image" src="img/192223.jpg" alt="Conference Certificate" style="width:100%">
-    <div class="w3-display-left w3-text-white" style="padding:96px">
+    <div class="w3-display-left w3-text-white" style="padding:96px; text-shadow:0 0 3px #000000">
       <span class="font_Roboto w3-xxxlarge"><b>Teaching to Other</b></span><br>
       <p class="font_Roboto w3-xlarge">Knowledge is wonderful asset,<br>Everytime you exchanged,<br>You always receieve new while never lose yours.</p>
       <p class="font_Roboto w3-xlarge">I proudly teach to other the knowledge I learned<br>Gladly welcomed new knowledge as well</p>
@@ -345,6 +351,20 @@
   </div>
 
 
+  <div class="w3-display-container" id="LearnMore">
+    <img class="w3-image w3-greyscale-min" src="img/20170824_221137.jpg" style="width:100%">
+    <b>
+    <div class="w3-display-middle w3-center w3-text-white" style="text-shadow:0 0 3px #000000">
+      <span class="font_Roboto w3-xxxlarge"><b>Interesting?</b></span><br>
+      <p class="font_Roboto w3-xlarge">You can learn more about me and my work in full CV</p>
+      <a href="cv.html"><button class="font_Roboto w3-button w3-padding-large w3-border w3-border-white w3-hover-amber w3-large w3-round-large" style="text-shadow:0 0 3px #000000"><b> Full Curriculum Vitae</b></button></a>
+      <br>
+    </div>
+  </b>
+  </div>
+
+  <br>
+
 
   <script>
     var modal
@@ -373,6 +393,6 @@
     <p>This site used <a href="https://fontawesome.com/">Font Awesome</a> and <a href="https://www.w3schools.com/w3css/defaulT.asp"> W3.CSS</a> as CSS Framework</p>
     <p>© 2020 Copyright: <a href="https://thanepi.github.io/">Thane Pitchayarat</a> | <a href="https://firebrand-intellect.github.io/">Firebrand Intellect</a></p>
   </div>
-  
+
 </body>
 </html>
