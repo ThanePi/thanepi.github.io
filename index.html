@@ -14,14 +14,76 @@
   .font_Roboto {font-family: 'Roboto', sans-serif;}
   .font_OpenSans {font-family: 'Open Sans', sans-serif;}
 
-  .Title_Indention {
-    text-indent: 110px;
+  .hero-cta-group {
+    width: min(520px, 92vw);
+    margin: 0 auto;
+  }
+
+  .hero-cta-row {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+  }
+
+  .hero-cta-row .hero-cta,
+  .hero-cta-row .hero-cta-current {
+    flex: 1 1 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .hero-cta-current {
+    background-color: rgba(255, 193, 7, 0.85);
+    border-color: rgba(255, 193, 7, 0.95) !important;
+    color: #111 !important;
+    text-shadow: none;
+  }
+
+  .hero-cta-current:hover {
+    background-color: rgba(255, 193, 7, 1);
+    color: #000 !important;
   }
 
   </style>
 
   <meta charset="utf-8">
-  <title>Thanapat Pitchayarat - Personal Website</title>
+  <meta name="description" content="Academic-era archive hub for Thanapat Pitchayarat. \"Thane Pi\" (thanepi) is an academic-era shortened/latinized handle and code-repository username only—not a separate identity. Hosts archived BSc Computer Science CV and portfolio from graduation and internship-era work. Not a current professional profile. Current professional site: https://tannerpitch.github.io">
+  <meta name="robots" content="index,follow">
+  <title>Thanapat Pitchayarat — Academic-era archive hub</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Thanapat Pitchayarat — Academic-era archive hub",
+    "url": "https://thanepi.github.io/",
+    "description": "Hub for archived academic-era records of Thanapat Pitchayarat: Bachelor of Science (Computer Science) curriculum vitae and portfolio from around graduation and cooperative internship. Pages on this site are historical and are not a current professional profile. Current professional presence: https://tannerpitch.github.io. Note: \"Thane Pi\" / thanepi is an academic-era shortened latinized handle and code-repository username limited to this archive era, not the primary display name.",
+    "inLanguage": "en",
+    "about": {
+      "@type": "Person",
+      "name": "Thanapat Pitchayarat",
+      "alternateName": "Thane Pi",
+      "disambiguatingDescription": "Primary name is Thanapat Pitchayarat. \"Thane Pi\" (and username thanepi) is a shortened/latinized academic-era handle and code-repository username used only for this academic-era archive site—not a current professional brand name.",
+      "url": "https://thanepi.github.io/",
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Rajamangala University of Technology Phra Nakorn"
+      },
+      "sameAs": [
+        "https://tannerpitch.github.io"
+      ]
+    },
+    "significantLink": [
+      "https://thanepi.github.io/cv.html",
+      "https://thanepi.github.io/portfolio.html",
+      "https://tannerpitch.github.io"
+    ],
+    "relatedLink": [
+      "https://thanepi.github.io/cv.html",
+      "https://thanepi.github.io/portfolio.html"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -29,7 +91,7 @@
 
     <img class="w3-image w3-greyscale-min" src="img/20170913_160100_16_9.jpg" alt="" style="width:100%">
     <div class="font_Roboto w3-large w3-padding-32 w3-display-topleft" style="left:32px">
-      <a href="#.html" class="w3-btn w3-text-amber w3-hover-text-orange"><b><i class="fa fa-home"></i></b></a>
+      <a href="index.html" class="w3-btn w3-text-amber w3-hover-text-orange"><b><i class="fa fa-home"></i></b></a>
     </div>
     <div class="font_Roboto w3-large w3-padding-32 w3-display-topright" style="right:32px">
       <a href="portfolio.html" class="w3-btn w3-text-white w3-opacity w3-hover-opacity-off"><b>Portfolio</b></a>
@@ -38,43 +100,25 @@
       <a href="cv.html" class="w3-btn w3-text-white w3-opacity w3-hover-opacity-off"><b>CV</b></a>
     </div>
     <div class="w3-display-middle w3-center">
-      <h1 class="font_OpenSans w3-text-white" style="text-shadow:1px 1px 0 #444"><b>THANE PITCHAYARAT</b></h1>
-      <b><i><p class="Title_Indention w3-opacity w3-justify w3-white" id="changeText"></p></i></b>
-      <a href="cv.html#Bio" class="font_Roboto w3-button w3-border w3-text-white w3-large w3-padding-large">DISCOVER</a>
+      <h1 class="font_OpenSans w3-text-white" style="text-shadow:1px 1px 0 #444"><b>THANAPAT PITCHAYARAT</b></h1>
+      <p class="font_Roboto w3-large w3-text-white w3-opacity" style="text-shadow:1px 1px 0 #444">Academic-era archive · BSc Computer Science</p>
+      <div class="hero-cta-group">
+        <div class="hero-cta-row">
+          <a href="cv.html" class="font_Roboto w3-button w3-border w3-text-white w3-large w3-padding-large hero-cta">Academic CV</a>
+          <a href="portfolio.html" class="font_Roboto w3-button w3-border w3-text-white w3-large w3-padding-large hero-cta">Academic Portfolio</a>
+        </div>
+        <div class="hero-cta-row">
+          <a href="https://tannerpitch.github.io" target="_blank" rel="noopener noreferrer" class="font_Roboto w3-button w3-border w3-large w3-padding-large hero-cta-current"><b>Current Professional Site</b></a>
+        </div>
+      </div>
     </div>
   </div>
-<script>
-var text = [
-  "the Analyzer",
-  "the Athlete",
-  "the Commander",
-  "the Competitor",
-  "the Engineer",
-  "the Entrepreneur",
-  "the Leader",
-  "the Researcher",
-  "the Scientist",
-  "the Student"];
-var counter = 0;
-var elem = document.getElementById("changeText");
-var inst = setInterval(change, 1500);
 
-function change() {
- elem.innerHTML = text[counter];
- counter++;
- if (counter >= text.length) {
-   counter = 0;
-   // clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
- }
-}
-</script>
-
-<!--
-<div class="w3-dark-grey w3-padding w3-center font_Roboto w3-tiny">
-  <p>This site used <a href="https://fontawesome.com/">Font Awesome</a> and <a href="https://www.w3schools.com/w3css/defaulT.asp"> W3.CSS</a> as CSS Framework</p>
-  <p>© 2020 Copyright: <a href="https://thanepi.github.io/">Thane Pitchayarat</a> | <a href="https://firebrand-intellect.github.io/">Firebrand Intellect</a></p>
-</div>
--->
+  <div class="w3-dark-grey w3-padding w3-center font_Roboto w3-tiny">
+    <p>This site is an academic-era archive (BSc Computer Science CV and portfolio). Current professional work: <a href="https://tannerpitch.github.io" target="_blank" rel="noopener noreferrer">tannerpitch.github.io</a></p>
+    <p>This site used <a href="https://fontawesome.com/">Font Awesome</a> and <a href="https://www.w3schools.com/w3css/defaulT.asp"> W3.CSS</a> as CSS Framework</p>
+    <p>© 2021 Copyright: <a href="https://thanepi.github.io/">Thanapat Pitchayarat</a> | <a href="https://firebrand-intellect.github.io/">Firebrand Intellect</a></p>
+  </div>
 
 </body>
 </html>
